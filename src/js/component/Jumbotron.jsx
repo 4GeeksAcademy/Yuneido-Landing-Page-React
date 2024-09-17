@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Jumbotron(props) {
-  let width = !props.width ? "95%" : props.width
+  let width = !props.width ? "97%" : props.width
   return (
 
       <div className="row p-3" id="jumbotron" style={{width: width}}>

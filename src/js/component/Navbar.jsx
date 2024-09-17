@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 
 function Navbar(props) {
   let brand = props.brand;
-  let brandUrl = props.data.url;
+  let brandUrl = props.url;
   let options = props.data;
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div className="container-fluid m-0">
-        <a className="navbar-brand ms-5" href={brandUrl}>
+      <div className="container-fluid m-0 d-flex justify-content-evenly">
+        <a className="navbar-brand" href={`${brandUrl}`}>
           {brand}
         </a>
         <button
